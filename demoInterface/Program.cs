@@ -34,6 +34,12 @@ namespace demoInterface
                 Console.WriteLine(arrComp[i]);
             }
 
+            Complex c1 = new Complex(1,2);
+            Complex c2 = new Complex(3,4);
+            Console.WriteLine(c1.CompareTo(c2));
+
+            IComparable < Complex > ii = c1;
+            int r = ii.CompareTo(c2);
 
             Console.ReadLine();
         }
